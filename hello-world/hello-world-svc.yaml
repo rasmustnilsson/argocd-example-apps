@@ -6,7 +6,9 @@ spec:
   ports:
   - port: 3000
     targetPort: 3000
+    name: hello-world-1
   - port: 5000
     targetPort: 5000
+    name: hello-world-2
   selector:
     app: hello-world
