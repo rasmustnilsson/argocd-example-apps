@@ -14,7 +14,7 @@ spec:
         app: hello-world
     spec:
       containers:
-      - image: hello-world-app
+      - image: hello-world-app:2
         name: hello-world
         imagePullPolicy: Never
         ports:
