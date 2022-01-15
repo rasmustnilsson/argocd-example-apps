@@ -14,7 +14,7 @@ spec:
         app: hello-world
     spec:
       containers:
-      - image: crccheck/hello-world
+      - image: hello-world-app
         name: hello-world
         ports:
-        - containerPort: 8000
+        - containerPort: 3000
