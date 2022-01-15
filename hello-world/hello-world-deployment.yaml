@@ -14,13 +14,8 @@ spec:
         app: hello-world
     spec:
       containers:
-      - image: hello-world-app:2
-        name: hello-world-1
-        imagePullPolicy: Never
-        ports:
-        - containerPort: 3000
       - image: hello-world-app-2:1
-        name: hello-world-2
+        name: hello-world
         imagePullPolicy: Never
         ports:
         - containerPort: 5000
