@@ -6,4 +6,4 @@ WORKDIR /app
 
 COPY index.html /app/index.html
 
-CMD ["serve", "/app"]
+CMD ["serve", "/app", "-l", "5000"]
