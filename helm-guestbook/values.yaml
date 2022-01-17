@@ -10,7 +10,7 @@ image:
   pullPolicy: Never
 
 service:
-  type: ClusterIP
+  type: LoadBalancer
   port: 3001
 
 ingress:
