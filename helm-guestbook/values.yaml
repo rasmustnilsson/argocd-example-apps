@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: atlas/frontend
-  tag: 1
+  tag: ${DOCKER_IMAGE_TAG}
   pullPolicy: Never
 
 service:
