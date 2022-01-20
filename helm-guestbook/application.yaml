@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: helm-guestbook
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: argocd
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: helm-guestbook
+    repoURL: https://github.com/rasmustnilsson/argocd-example-apps.git
+    targetRevision: HEAD
+    helm:
+      # values: |
+      #   DOCKER_IMAGE_TAG: ${ARGOCD_APP_REVISION}
+      parameters:
+      - name: DOCKER_IMAGE_TAG
+        value: $ARGOCD_APP_SOURCE_TARGET_REVISION
