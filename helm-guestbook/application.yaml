@@ -19,4 +19,4 @@ spec:
       #   DOCKER_IMAGE_TAG: ${ARGOCD_APP_REVISION}
       parameters:
       - name: DOCKER_IMAGE_TAG
-        value: $ARGOCD_APP_SOURCE_TARGET_REVISION
+        value: 1

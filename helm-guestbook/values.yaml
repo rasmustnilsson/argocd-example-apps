@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: atlas/frontend
-  tag: 1
+  tag: $(GIT_COMMIT)
   pullPolicy: Never
 
 service:
